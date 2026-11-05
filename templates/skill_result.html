@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h2>📊 Skill Analysis Result</h2>
+
+    <p><strong>Your Skills</strong></p>
+    <input type="text" value="{{ skills }}" readonly>
+
+    <p><strong>Recommended Skills</strong></p>
+    <input type="text" value="{{ recommended }}" readonly>
+
+    <br><br>
+
+    <a href="/skill">
+        <button>Analyze Again</button>
+    </a>
+
+</div>
+
+</body>
+</html>

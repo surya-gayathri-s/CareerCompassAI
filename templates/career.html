@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>🤖 AI Career Recommendation</h1>
+    <p>Tell us about yourself</p>
+
+    <form action="/career-result" method="POST">
+
+        <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
+
+        <input
+        type="text"
+        name="education"
+        placeholder="Education"
+        required>
+
+        <input
+        type="text"
+        name="skills"
+        placeholder="Skills (Python, Java, SQL...)"
+        required>
+
+        <input
+        type="text"
+        name="interests"
+        placeholder="Interests (AI, Web Development...)"
+        required>
+
+        <button type="submit">
+            Get Career Recommendation
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

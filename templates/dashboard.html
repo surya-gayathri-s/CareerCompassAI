@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerCompass AI Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🚀 CareerCompass AI</div>
+
+    <div class="menu">
+        <a href="/roadmap">Roadmaps</a>
+        <a href="/logout">
+            <button class="login-btn">Logout</button>
+        </a>
+    </div>
+</nav>
+
+<h1 style="text-align:center; margin-top:40px;">
+    🚀 CareerCompass AI Dashboard
+</h1>
+
+<h3 style="text-align:center; margin-top:15px;">
+    Welcome {{ session.get('user_name', 'User') }} 👋
+</h3>
+
+<div class="features">
+
+    <a href="/career" style="text-decoration:none; color:inherit;">
+        <div class="card">
+            <h2>🤖 AI Career</h2>
+            <p>Find your best career path.</p>
+        </div>
+    </a>
+
+    <a href="/skill" style="text-decoration:none; color:inherit;">
+        <div class="card">
+            <h2>📊 Skill Analysis</h2>
+            <p>Know your missing skills.</p>
+        </div>
+    </a>
+
+    <a href="/roadmap" style="text-decoration:none; color:inherit;">
+        <div class="card">
+            <h2>🗺️ Roadmap</h2>
+            <p>Explore your learning roadmap.</p>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>
